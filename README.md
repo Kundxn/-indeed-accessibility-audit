@@ -44,24 +44,6 @@ project-root/
 - **`docs/`** holds audit evidence and architecture notes — not code.
 - **`tests/`** mirrors `client/` and `server/`, one test suite per layer.
 
-## Local setup
-
-**Client**
-```bash
-cd client
-npm install
-npm start        # runs on http://localhost:3000
-```
-
-**Server**
-```bash
-cd server
-mvn spring-boot:run     # runs on http://localhost:8080
-```
-
-The client expects the API at `http://localhost:8080/api`. Set `REACT_APP_API_BASE`
-in a `client/.env` file to override this.
-
 ## First vertical feature slice: accessible job search
 
 To prove the skeleton works end-to-end (not just that folders exist), the first
