@@ -1,9 +1,5 @@
 import { useState } from "react";
 
-// First vertical slice. Accessibility-first by design, informed directly by
-// docs/accessibility-audit.md: explicit <label>, visible focus state (via
-// default browser outline, not suppressed), and full keyboard operability
-// (a native <button type="submit"> needs no extra key handling).
 export default function SearchBar() {
   const [query, setQuery] = useState("");
   const [results, setResults] = useState([]);
